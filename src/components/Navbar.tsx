@@ -15,9 +15,9 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { label: "About", href: "#about" },
-    { label: "Membership", href: "#membership" },
-    { label: "Contact", href: "#contact" },
+    { label: "About", href: "/#about" },
+    { label: "Membership", href: "/membership" },
+    { label: "Contact", href: "/#contact" },
   ];
 
   return (
@@ -55,7 +55,7 @@ export default function Navbar() {
           {/* CTA + Hamburger */}
           <div className="flex items-center gap-4">
             <a
-              href="#membership"
+              href="/membership"
               className="hidden md:inline-flex items-center px-5 py-2 rounded-full text-sm font-semibold text-white transition-opacity duration-200 hover:opacity-90"
               style={{ backgroundColor: "#1B4F72" }}
             >
@@ -106,7 +106,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#membership"
+            href="/membership"
             onClick={() => setMenuOpen(false)}
             className="inline-flex items-center justify-center px-5 py-2 rounded-full text-sm font-semibold text-white mt-2 transition-opacity hover:opacity-90"
             style={{ backgroundColor: "#1B4F72" }}
