@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Footer() {
   const socialLinks = [
     {
@@ -35,12 +37,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
           {/* Left — Logo + social */}
           <div>
-            {/* TODO: Replace with <Image src="/logo.png" /> when logo is available */}
-            <a href="/" className="flex flex-col leading-tight">
-              <span className="text-2xl font-extrabold text-white tracking-wide">BHTCC</span>
-              <span className="text-xs font-medium mt-0.5" style={{ color: "rgba(255,255,255,0.6)" }}>
-                Bhutan-Thai Chamber of Commerce
-              </span>
+            <a href="/">
+              <Image src="/logo.png" alt="BHTCC" width={120} height={48} className="object-contain" />
             </a>
             <p className="mt-3 text-xs leading-relaxed" style={{ color: "rgba(255,255,255,0.5)" }}>
               Fostering bilateral trade and investment between Bhutan and Thailand.

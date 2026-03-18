@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const slides = [
   {
-    url: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80",
+    url: "/bhutan.jpg",
     alt: "Tiger's Nest Monastery, Bhutan",
   },
   {

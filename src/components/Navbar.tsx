@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -29,14 +30,8 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a href="#" className="flex flex-col leading-tight group">
-            {/* TODO: Replace with <Image src="/logo.png" /> when logo is available */}
-            <span className="text-xl font-800 font-extrabold tracking-wide" style={{ color: "#1B4F72" }}>
-              BHTCC
-            </span>
-            <span className="text-xs font-medium" style={{ color: "#1B4F72", opacity: 0.7 }}>
-              Bhutan-Thai Chamber of Commerce
-            </span>
+          <a href="/">
+            <Image src="/logo.png" alt="BHTCC" width={120} height={48} className="object-contain" />
           </a>
 
           {/* Desktop nav links */}

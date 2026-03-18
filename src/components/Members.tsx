@@ -8,7 +8,6 @@ const placeholderMembers = [
   { name: "Member Organization 3" },
   { name: "Member Organization 4" },
   { name: "Member Organization 5" },
-  { name: "Member Organization 6" },
 ];
 
 export default function Members() {
@@ -44,7 +43,7 @@ export default function Members() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4"
+          className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4"
         >
           {placeholderMembers.map((member, i) => (
             <div
