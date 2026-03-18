@@ -9,7 +9,7 @@ const slides = [
     alt: "Tiger's Nest Monastery, Bhutan",
   },
   {
-    url: "https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=1920&q=80",
+    url: "https://images.unsplash.com/photo-1563492065599-3520f775eeed?w=1920&q=80",
     alt: "Bangkok, Thailand",
   },
 ];

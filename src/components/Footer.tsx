@@ -38,7 +38,7 @@ export default function Footer() {
           {/* Left — Logo + social */}
           <div>
             <a href="/">
-              <Image src="/logo.png" alt="BHTCC" width={120} height={48} className="object-contain" />
+              <Image src="/logo.png" alt="BHTCC" width={150} height={60} className="object-contain" />
             </a>
             <p className="mt-3 text-xs leading-relaxed" style={{ color: "rgba(255,255,255,0.5)" }}>
               Fostering bilateral trade and investment between Bhutan and Thailand.
