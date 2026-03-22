@@ -31,7 +31,7 @@ export default function Hero() {
   }, [next]);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
+    <section className="relative h-screen flex items-center justify-center overflow-hidden">
       {/* Slides — crossfade via opacity */}
       {slides.map((slide, i) => (
         <div
@@ -46,44 +46,44 @@ export default function Hero() {
         />
       ))}
 
-      {/* Minimal dark overlay */}
-      <div className="absolute inset-0 bg-black/30 z-10" />
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black/40 z-10" />
+
+      {/* Top gradient for navbar legibility */}
+      <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black/30 to-transparent z-10 pointer-events-none" />
 
       {/* Centered content */}
-      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-20 lg:py-28">
+      <div className="relative z-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9 }}
         >
-          {/* Eyebrow */}
-          <div className="inline-flex items-center gap-2 mb-6">
-            <span className="w-8 h-px" style={{ backgroundColor: "#C9960C" }} />
-            <span className="text-sm font-semibold uppercase tracking-widest text-white/80">
-              Bhutan · Thailand
+          {/* Pill badge */}
+          <div className="inline-flex items-center mb-8">
+            <span className="bg-white/10 backdrop-blur border border-white/20 text-white/80 text-xs tracking-widest px-4 py-1 rounded-full">
+              BHUTAN · THAILAND
             </span>
-            <span className="w-8 h-px" style={{ backgroundColor: "#C9960C" }} />
           </div>
 
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-tight tracking-tight mb-6 max-w-4xl mx-auto text-white drop-shadow-sm">
+          <h1 className="text-5xl md:text-7xl font-bold leading-tight tracking-tight mb-6 text-white drop-shadow-sm">
             Bridging Business Between Bhutan and Thailand
           </h1>
 
-          <p className="text-lg sm:text-xl text-white/75 max-w-2xl mx-auto mb-10 leading-relaxed">
+          <p className="text-lg text-white/70 max-w-xl mx-auto mb-10 leading-relaxed">
             The Bhutan-Thai Chamber of Commerce connects entrepreneurs, corporations, and government bodies to foster bilateral trade and investment.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="/membership"
-              className="inline-flex items-center px-8 py-4 rounded-full text-base font-semibold text-white shadow-lg transition-all duration-200 hover:opacity-90 hover:-translate-y-0.5"
-              style={{ backgroundColor: "#1B4F72" }}
+              className="inline-flex items-center px-8 py-4 rounded-full text-base font-semibold text-white bg-[#C9960C] shadow-lg transition-all duration-200 hover:brightness-110 hover:-translate-y-0.5"
             >
               Become a Member
             </a>
             <a
               href="#about"
-              className="inline-flex items-center px-8 py-4 rounded-full text-base font-semibold border border-white/70 text-white backdrop-blur-sm bg-white/10 transition-all duration-200 hover:bg-white/20 hover:-translate-y-0.5"
+              className="inline-flex items-center px-8 py-4 rounded-full text-base font-semibold border border-white text-white transition-all duration-200 hover:bg-white/10 hover:-translate-y-0.5"
             >
               Learn More
             </a>

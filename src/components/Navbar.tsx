@@ -1,19 +1,10 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Image from "next/image";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 10);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   const navLinks = [
     { label: "About", href: "/#about" },
@@ -22,17 +13,13 @@ export default function Navbar() {
   ];
 
   return (
-    <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white border-b border-[#e5e7eb] py-4 ${
-        scrolled ? "backdrop-blur-sm shadow-sm" : ""
-      }`}
-    >
+    <nav className="absolute top-0 left-0 right-0 z-50 py-5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo + Text */}
           <a href="/" className="flex items-center gap-3">
             <Image src="/logo.png" alt="BHTCC" width={52} height={52} className="object-contain" />
-            <span className="font-bold text-[#1B4F72] text-lg tracking-widest">BHTCC</span>
+            <span className="font-bold text-white text-lg tracking-widest">BHTCC</span>
           </a>
 
           {/* Desktop nav links */}
@@ -41,7 +28,7 @@ export default function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-[#1B4F72] font-medium text-sm tracking-wide transition-colors duration-200 hover:text-[#C9960C]"
+                className="text-white/90 font-medium text-sm tracking-wide transition-colors duration-200 hover:text-white"
               >
                 {link.label}
               </a>
@@ -52,7 +39,7 @@ export default function Navbar() {
           <div className="flex items-center gap-4">
             <a
               href="/membership"
-              className="hidden md:inline-flex items-center px-6 py-2.5 rounded-full text-sm font-semibold text-white bg-[#1B4F72] shadow-md transition-colors duration-200 hover:bg-[#C9960C] tracking-wide"
+              className="hidden md:inline-flex items-center px-6 py-2.5 rounded-full text-sm font-semibold text-white border border-white/70 tracking-wide transition-all duration-200 hover:bg-white hover:text-[#1B4F72]"
             >
               Join Now
             </a>
@@ -63,15 +50,9 @@ export default function Navbar() {
               onClick={() => setMenuOpen(!menuOpen)}
               aria-label="Toggle menu"
             >
-              <span
-                className={`block w-5 h-px transition-all duration-300 bg-[#1B4F72] ${menuOpen ? "rotate-45 translate-y-[7px]" : ""}`}
-              />
-              <span
-                className={`block w-5 h-px transition-all duration-300 bg-[#1B4F72] ${menuOpen ? "opacity-0" : ""}`}
-              />
-              <span
-                className={`block w-5 h-px transition-all duration-300 bg-[#1B4F72] ${menuOpen ? "-rotate-45 -translate-y-[7px]" : ""}`}
-              />
+              <span className={`block w-5 h-px transition-all duration-300 bg-white ${menuOpen ? "rotate-45 translate-y-[7px]" : ""}`} />
+              <span className={`block w-5 h-px transition-all duration-300 bg-white ${menuOpen ? "opacity-0" : ""}`} />
+              <span className={`block w-5 h-px transition-all duration-300 bg-white ${menuOpen ? "-rotate-45 -translate-y-[7px]" : ""}`} />
             </button>
           </div>
         </div>
@@ -79,9 +60,10 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       <div
-        className={`md:hidden overflow-hidden transition-all duration-300 bg-white border-t border-[#e5e7eb] ${
+        className={`md:hidden overflow-hidden transition-all duration-300 ${
           menuOpen ? "max-h-64 opacity-100" : "max-h-0 opacity-0"
         }`}
+        style={{ background: "rgba(0,0,0,0.6)", backdropFilter: "blur(12px)" }}
       >
         <div className="px-4 pb-5 pt-3 flex flex-col gap-3">
           {navLinks.map((link) => (
@@ -89,7 +71,7 @@ export default function Navbar() {
               key={link.href}
               href={link.href}
               onClick={() => setMenuOpen(false)}
-              className="text-sm font-medium py-2 text-[#1B4F72] tracking-wide transition-colors duration-200 hover:text-[#C9960C]"
+              className="text-sm font-medium py-2 text-white/90 tracking-wide transition-colors duration-200 hover:text-white"
             >
               {link.label}
             </a>
@@ -97,7 +79,7 @@ export default function Navbar() {
           <a
             href="/membership"
             onClick={() => setMenuOpen(false)}
-            className="inline-flex items-center justify-center px-6 py-2.5 rounded-full text-sm font-semibold text-white bg-[#1B4F72] shadow-md mt-1 transition-colors duration-200 hover:bg-[#C9960C] tracking-wide"
+            className="inline-flex items-center justify-center px-6 py-2.5 rounded-full text-sm font-semibold text-white border border-white/70 mt-1 tracking-wide transition-all duration-200 hover:bg-white hover:text-[#1B4F72]"
           >
             Join Now
           </a>
