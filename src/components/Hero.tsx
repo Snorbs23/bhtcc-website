@@ -66,7 +66,10 @@ export default function Hero() {
             </span>
           </div>
 
-          <h1 className="text-6xl md:text-8xl font-black leading-tight tracking-tight mb-6 text-white drop-shadow-sm">
+          <h1
+            className="mb-6 drop-shadow-sm"
+            style={{ fontSize: '7rem', fontWeight: 900, lineHeight: 1.0, color: 'white' }}
+          >
             Bridging Business Between Bhutan and Thailand
           </h1>
 
