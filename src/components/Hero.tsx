@@ -66,7 +66,7 @@ export default function Hero() {
             </span>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold leading-tight tracking-tight mb-6 text-white drop-shadow-sm">
+          <h1 className="text-6xl md:text-8xl font-black leading-tight tracking-tight mb-6 text-white drop-shadow-sm">
             Bridging Business Between Bhutan and Thailand
           </h1>
 

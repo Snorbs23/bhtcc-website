@@ -43,7 +43,7 @@ const reasons = [
 
 export default function WhyJoin() {
   return (
-    <section className="py-20 lg:py-28" style={{ backgroundColor: "#F0EBE0" }}>
+    <section className="py-20 lg:py-28" style={{ backgroundColor: "#F5F0E8" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -67,7 +67,7 @@ export default function WhyJoin() {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-10">
           {reasons.map((reason, index) => (
             <motion.div
               key={reason.number}
@@ -75,19 +75,15 @@ export default function WhyJoin() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.08 }}
-              className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300"
+              className="pt-6 border-t-2"
+              style={{ borderColor: "#C9960C" }}
             >
-              {/* Gold bar */}
-              <div className="w-8 h-1 mb-5 rounded-full" style={{ backgroundColor: "#C9960C" }} />
-              {/* Number */}
               <div className="text-sm font-bold mb-2" style={{ color: "#C9960C" }}>
                 {reason.number}
               </div>
-              {/* Title */}
-              <h3 className="text-lg font-bold mb-3" style={{ color: "#1B4F72" }}>
+              <h3 className="text-lg font-bold mb-2" style={{ color: "#1B4F72" }}>
                 {reason.title}
               </h3>
-              {/* Description */}
               <p className="text-gray-500 text-sm leading-relaxed">{reason.description}</p>
             </motion.div>
           ))}

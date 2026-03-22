@@ -44,19 +44,16 @@ export default function About() {
               </span>
             </div>
             <h2
-              className="text-4xl lg:text-5xl font-extrabold leading-tight mb-6"
+              className="text-5xl font-black leading-tight mb-6"
               style={{ color: "#1B4F72" }}
             >
               About BHTCC
             </h2>
-            <p className="text-gray-500 text-lg leading-relaxed mb-4">
-              The Bhutan-Thai Chamber of Commerce (BHTCC) is a bilateral business organization dedicated to fostering economic ties between the Kingdom of Bhutan and the Kingdom of Thailand.
-            </p>
-            <p className="text-gray-500 text-lg leading-relaxed mb-4">
-              We serve as the primary bridge connecting businesses, investors, and government institutions across both nations, creating pathways for sustainable growth and mutual prosperity.
+            <p className="text-gray-500 text-lg leading-relaxed mb-3">
+              We are the primary bridge connecting businesses, investors, and governments between Bhutan and Thailand.
             </p>
             <p className="text-gray-500 text-lg leading-relaxed">
-              Founded on principles of trust, cooperation, and excellence, BHTCC is committed to making bilateral trade and investment accessible, transparent, and rewarding for all members.
+              Everything we do is built to make bilateral trade faster, simpler, and more rewarding for our members.
             </p>
           </motion.div>
 

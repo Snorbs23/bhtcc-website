@@ -31,7 +31,7 @@ const newsItems = [
 
 export default function News() {
   return (
-    <section id="news" className="py-20 lg:py-28" style={{ backgroundColor: "#F8F6F1" }}>
+    <section id="news" className="py-20 lg:py-28" style={{ backgroundColor: "#FFFFFF" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <motion.div

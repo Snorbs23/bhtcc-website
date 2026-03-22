@@ -30,7 +30,7 @@ export default function Contact() {
   const focusStyle = { borderColor: "#1B4F72" };
 
   return (
-    <section id="contact" className="py-20 lg:py-28 bg-white">
+    <section id="contact" className="py-20 lg:py-28" style={{ backgroundColor: "#F5F0E8" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
           {/* Left column */}
