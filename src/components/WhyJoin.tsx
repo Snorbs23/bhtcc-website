@@ -43,7 +43,7 @@ const reasons = [
 
 export default function WhyJoin() {
   return (
-    <section className="py-20 lg:py-28" style={{ backgroundColor: "#F5F0E8" }}>
+    <section className="pt-20 lg:pt-28" style={{ backgroundColor: "#F5F0E8" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -89,6 +89,7 @@ export default function WhyJoin() {
           ))}
         </div>
       </div>
+      <div className="h-24 bg-gradient-to-b from-[#F5F0E8] to-white" />
     </section>
   );
 }

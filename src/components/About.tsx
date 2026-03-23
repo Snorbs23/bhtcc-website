@@ -27,7 +27,7 @@ const features = [
 
 export default function About() {
   return (
-    <section id="about" className="py-20 lg:py-28 bg-white">
+    <section id="about" className="pt-20 lg:pt-28 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
           {/* Left column */}
@@ -92,6 +92,7 @@ export default function About() {
           </motion.div>
         </div>
       </div>
+      <div className="h-24 bg-gradient-to-b from-white to-[#F5F0E8]" />
     </section>
   );
 }

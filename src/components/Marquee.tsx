@@ -1,3 +1,7 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 export default function Marquee() {
   const items = [
     "Trade Facilitation",
@@ -11,9 +15,12 @@ export default function Marquee() {
   const repeatedItems = [...items, ...items, ...items];
 
   return (
-    <div
-      className="overflow-hidden py-4"
-      style={{ backgroundColor: "#EAF2F8" }}
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
+      className="overflow-hidden py-4 bg-white"
       aria-hidden="true"
     >
       <div
@@ -34,6 +41,6 @@ export default function Marquee() {
           </span>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 }

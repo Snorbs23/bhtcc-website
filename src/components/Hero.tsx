@@ -73,7 +73,7 @@ export default function Hero() {
             Bridging Business Between Bhutan and Thailand
           </h1>
 
-          <p className="text-lg text-white/70 max-w-xl mx-auto mb-10 leading-relaxed">
+          <p className="text-white/70 max-w-xl mx-auto mb-10 leading-relaxed" style={{ fontSize: '1.125rem' }}>
             The Bhutan-Thai Chamber of Commerce connects entrepreneurs, corporations, and government bodies to foster bilateral trade and investment.
           </p>
 
@@ -117,6 +117,9 @@ export default function Hero() {
           <path d="M7 5L11 9L7 13" stroke="white" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       </button>
+
+      {/* Bottom fade into About */}
+      <div className="absolute bottom-0 inset-x-0 h-32 z-20 bg-gradient-to-b from-transparent to-white pointer-events-none" />
 
       {/* Slide indicators */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2">
