@@ -18,8 +18,8 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo + Text */}
           <a href="/" className="flex items-center gap-3">
-            <Image src="/logo.png" alt="BHTCC" width={52} height={52} className="object-contain" />
-            <span className="font-bold text-white text-lg tracking-widest">BHTCC</span>
+            <Image src="/logo.png" alt="BHTCC" width={72} height={72} className="object-contain" />
+            <span className="font-bold text-white text-2xl tracking-widest">BHTCC</span>
           </a>
 
           {/* Desktop nav links */}
@@ -28,7 +28,7 @@ export default function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-white/90 font-medium text-sm tracking-wide transition-colors duration-200 hover:text-white"
+                className="text-white/90 font-medium text-base tracking-wide transition-colors duration-200 hover:text-white"
               >
                 {link.label}
               </a>

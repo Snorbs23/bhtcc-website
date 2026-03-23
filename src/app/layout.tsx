@@ -9,9 +9,13 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Bhutan-Thai Chamber of Commerce | BHTCC",
+  title: "BHTCC | Bhutan-Thai Chamber of Commerce",
   description:
-    "Connecting Bhutan and Thailand through trade, investment, and bilateral partnerships.",
+    "The official bilateral chamber connecting businesses between the Kingdom of Bhutan and the Kingdom of Thailand.",
+  icons: {
+    icon: '/logo.png',
+    apple: '/logo.png',
+  },
 };
 
 export const viewport: Viewport = {
