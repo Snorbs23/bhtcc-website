@@ -68,7 +68,7 @@ export default function Hero() {
 
           <h1
             className="mb-6 drop-shadow-sm"
-            style={{ fontSize: '7rem', fontWeight: 900, lineHeight: 1.0, color: 'white' }}
+            style={{ fontSize: 'clamp(2.8rem, 5.5vw, 5rem)', fontWeight: 900, lineHeight: 1.1, color: 'white' }}
           >
             Bridging Business Between Bhutan and Thailand
           </h1>
@@ -119,10 +119,10 @@ export default function Hero() {
       </button>
 
       {/* Bottom fade into About */}
-      <div className="absolute bottom-0 inset-x-0 h-32 z-10 bg-gradient-to-b from-transparent to-white pointer-events-none" />
+      <div className="absolute bottom-0 inset-x-0 h-16 z-10 bg-gradient-to-b from-transparent to-white pointer-events-none" />
 
       {/* Slide indicators */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2">
+      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2">
         {slides.map((_, i) => (
           <button
             key={i}
