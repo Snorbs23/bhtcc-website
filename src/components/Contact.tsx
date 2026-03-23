@@ -122,7 +122,7 @@ export default function Contact() {
                     name="firstName"
                     value={formData.firstName}
                     onChange={handleChange}
-                    placeholder="Karma"
+                    placeholder="First Name"
                     required
                     className={inputClass}
                     onFocus={(e) => (e.target.style.borderColor = "#1B4F72")}
@@ -138,7 +138,7 @@ export default function Contact() {
                     name="lastName"
                     value={formData.lastName}
                     onChange={handleChange}
-                    placeholder="Wangchuk"
+                    placeholder="Last Name"
                     required
                     className={inputClass}
                     onFocus={(e) => (e.target.style.borderColor = "#1B4F72")}

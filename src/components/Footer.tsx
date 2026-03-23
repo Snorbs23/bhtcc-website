@@ -37,8 +37,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
           {/* Left — Logo + social */}
           <div>
-            <a href="/">
-              <Image src="/logo.png" alt="BHTCC" width={150} height={60} className="object-contain" />
+            <a href="/" className="inline-block">
+              <Image src="/logo.png" alt="BHTCC" width={120} height={120} className="object-contain block" />
             </a>
             <p className="mt-3 text-xs leading-relaxed" style={{ color: "rgba(255,255,255,0.5)" }}>
               Fostering bilateral trade and investment between Bhutan and Thailand.

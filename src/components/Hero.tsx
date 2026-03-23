@@ -119,7 +119,7 @@ export default function Hero() {
       </button>
 
       {/* Bottom fade into About */}
-      <div className="absolute bottom-0 inset-x-0 h-32 z-20 bg-gradient-to-b from-transparent to-white pointer-events-none" />
+      <div className="absolute bottom-0 inset-x-0 h-32 z-10 bg-gradient-to-b from-transparent to-white pointer-events-none" />
 
       {/* Slide indicators */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2">

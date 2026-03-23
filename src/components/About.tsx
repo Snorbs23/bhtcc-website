@@ -52,8 +52,11 @@ export default function About() {
             <p className="text-gray-500 text-lg leading-relaxed mb-3">
               We are the primary bridge connecting businesses, investors, and governments between Bhutan and Thailand.
             </p>
-            <p className="text-gray-500 text-lg leading-relaxed">
+            <p className="text-gray-500 text-lg leading-relaxed mb-8">
               Everything we do is built to make bilateral trade faster, simpler, and more rewarding for our members.
+            </p>
+            <p className="text-sm font-semibold tracking-widest" style={{ color: "#C9960C" }}>
+              Est. 2025 · Bangkok &amp; Thimphu · Bilateral Trade
             </p>
           </motion.div>
 
