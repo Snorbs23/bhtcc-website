@@ -50,7 +50,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/40 z-10" />
 
       {/* Top gradient for navbar legibility */}
-      <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black/30 to-transparent z-10 pointer-events-none" />
+      <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-black/60 to-transparent z-10 pointer-events-none" />
 
       {/* Centered content */}
       <div className="relative z-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
