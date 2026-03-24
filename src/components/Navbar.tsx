@@ -17,12 +17,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo + Text */}
           <a href="/" className="flex items-center gap-3">
-            <img
-              src="/logo.png"
-              alt="BHTCC"
-              style={{ width: '80px', height: '80px', objectFit: 'contain', filter: 'drop-shadow(0 0 1px rgba(255,255,255,0.3))' }}
-            />
-            <span className="font-bold text-white text-3xl tracking-widest">BHTCC</span>
+            <img src="/logo-full.png" alt="BHTCC" style={{ height: '60px', width: 'auto', objectFit: 'contain' }} />
           </a>
 
           {/* Desktop nav links */}
