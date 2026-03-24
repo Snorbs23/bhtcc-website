@@ -12,12 +12,16 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="absolute top-0 left-0 right-0 z-50 py-3">
+    <nav className="absolute top-0 left-0 right-0 z-50 py-2">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo + Text */}
           <a href="/" className="flex items-center gap-3">
-            <img src="/logo.png" alt="BHTCC" style={{ width: '64px', height: '64px', objectFit: 'contain' }} />
+            <img
+              src="/logo.png"
+              alt="BHTCC"
+              style={{ width: '80px', height: '80px', objectFit: 'contain', filter: 'drop-shadow(0 0 1px rgba(255,255,255,0.3))' }}
+            />
             <span className="font-bold text-white text-2xl tracking-widest">BHTCC</span>
           </a>
 
