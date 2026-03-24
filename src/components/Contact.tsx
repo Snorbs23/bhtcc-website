@@ -17,7 +17,7 @@ export default function Contact() {
     setStatus("sending");
     try {
       await emailjs.send(
-        "service_xr4axr",
+        "service_xr4axrj",
         "template_srtlrdl",
         {
           from_name: formData.firstName + " " + formData.lastName,
