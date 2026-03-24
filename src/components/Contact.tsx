@@ -33,11 +33,10 @@ export default function Contact() {
         EMAILJS_SERVICE_ID,
         EMAILJS_TEMPLATE_ID,
         {
-          from_name: `${formData.firstName} ${formData.lastName}`,
+          from_name: formData.firstName + ' ' + formData.lastName,
           from_email: formData.email,
           interest: formData.interest,
           message: formData.message,
-          to_email: "contact@bhutanthailandchamber.org",
         },
         EMAILJS_PUBLIC_KEY
       );
