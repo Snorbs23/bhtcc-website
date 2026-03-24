@@ -17,8 +17,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo + Text */}
           <a href="/" className="flex items-center gap-3">
-            <img src="/logo.png" alt="BHTCC" style={{ height: '64px', width: 'auto', objectFit: 'contain' }} />
-            <span style={{ fontWeight: 700, fontSize: '1.5rem', color: 'white', letterSpacing: '0.15em' }}>BHTCC</span>
+            <img src="/logo-full.png" alt="BHTCC" style={{ height: '60px', width: 'auto', objectFit: 'contain' }} />
           </a>
 
           {/* Desktop nav links */}
