@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,12 +12,12 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="absolute top-0 left-0 right-0 z-50 py-5">
+    <nav className="absolute top-0 left-0 right-0 z-50 py-3">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo + Text */}
           <a href="/" className="flex items-center gap-3">
-            <Image src="/logo.png" alt="BHTCC" width={72} height={72} className="object-contain" />
+            <img src="/logo.png" alt="BHTCC" style={{ width: '64px', height: '64px', objectFit: 'contain' }} />
             <span className="font-bold text-white text-2xl tracking-widest">BHTCC</span>
           </a>
 
