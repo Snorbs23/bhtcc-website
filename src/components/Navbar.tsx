@@ -22,7 +22,7 @@ export default function Navbar() {
               alt="BHTCC"
               style={{ width: '80px', height: '80px', objectFit: 'contain', filter: 'drop-shadow(0 0 1px rgba(255,255,255,0.3))' }}
             />
-            <span className="font-bold text-white text-2xl tracking-widest">BHTCC</span>
+            <span className="font-bold text-white text-3xl tracking-widest">BHTCC</span>
           </a>
 
           {/* Desktop nav links */}
@@ -31,7 +31,7 @@ export default function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-white/90 font-medium text-base tracking-wide transition-colors duration-200 hover:text-white"
+                className="text-white/90 font-medium text-lg tracking-wide transition-colors duration-200 hover:text-white"
               >
                 {link.label}
               </a>
@@ -42,7 +42,7 @@ export default function Navbar() {
           <div className="flex items-center gap-4">
             <a
               href="/membership"
-              className="hidden md:inline-flex items-center px-6 py-2.5 rounded-full text-sm font-semibold text-white border border-white/70 tracking-wide transition-all duration-200 hover:bg-white hover:text-[#1B4F72]"
+              className="hidden md:inline-flex items-center px-6 py-2.5 rounded-full text-base font-semibold text-white border border-white/70 tracking-wide transition-all duration-200 hover:bg-white hover:text-[#1B4F72]"
             >
               Join Now
             </a>
