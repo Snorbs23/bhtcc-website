@@ -2,6 +2,12 @@
 
 import { useState, FormEvent } from "react";
 import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
+
+// Fill these in from your EmailJS dashboard (emailjs.com)
+const EMAILJS_SERVICE_ID = "YOUR_SERVICE_ID";
+const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID";
+const EMAILJS_PUBLIC_KEY = "YOUR_PUBLIC_KEY";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -11,6 +17,7 @@ export default function Contact() {
     interest: "",
     message: "",
   });
+  const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
@@ -18,10 +25,27 @@ export default function Contact() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    alert("Thank you! We'll be in touch soon.");
-    setFormData({ firstName: "", lastName: "", email: "", interest: "", message: "" });
+    setStatus("sending");
+    try {
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        {
+          from_name: `${formData.firstName} ${formData.lastName}`,
+          from_email: formData.email,
+          interest: formData.interest,
+          message: formData.message,
+          to_email: "contact@bhutanthailandchamber.org",
+        },
+        EMAILJS_PUBLIC_KEY
+      );
+      setStatus("success");
+      setFormData({ firstName: "", lastName: "", email: "", interest: "", message: "" });
+    } catch {
+      setStatus("error");
+    }
   };
 
   const inputClass =
@@ -211,11 +235,26 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-full text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:opacity-90 hover:-translate-y-0.5"
+                disabled={status === "sending"}
+                className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-full text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:opacity-90 hover:-translate-y-0.5 disabled:opacity-60 disabled:cursor-not-allowed"
                 style={{ backgroundColor: "#1B4F72" }}
               >
-                Send Message
+                {status === "sending" ? "Sending…" : "Send Message"}
               </button>
+
+              {status === "success" && (
+                <p className="text-sm font-medium" style={{ color: "#1B4F72" }}>
+                  Thank you! We&apos;ll be in touch within 1–2 business days.
+                </p>
+              )}
+              {status === "error" && (
+                <p className="text-sm font-medium text-red-600">
+                  Something went wrong. Please email us directly at{" "}
+                  <a href="mailto:contact@bhutanthailandchamber.org" className="underline">
+                    contact@bhutanthailandchamber.org
+                  </a>
+                </p>
+              )}
             </form>
           </motion.div>
         </div>
