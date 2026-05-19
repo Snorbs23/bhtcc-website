@@ -17,7 +17,8 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo + Text */}
           <a href="/" className="flex items-center gap-3">
-            <img src="/logo-full.png" alt="BHTCC" style={{ height: '60px', width: 'auto', objectFit: 'contain' }} />
+            <img src="/BHTCClong.png" alt="BHTCC" className="hidden md:block" style={{ height: '60px', width: 'auto', objectFit: 'contain' }} />
+            <img src="/BHTCC.png" alt="BHTCC" className="block md:hidden" style={{ height: '48px', width: 'auto', objectFit: 'contain' }} />
           </a>
 
           {/* Desktop nav links */}
@@ -37,7 +38,7 @@ export default function Navbar() {
           <div className="flex items-center gap-4">
             <a
               href="/membership"
-              className="hidden md:inline-flex items-center px-6 py-2.5 rounded-full text-base font-semibold text-white border border-white/70 tracking-wide transition-all duration-200 hover:bg-white hover:text-[#1B4F72]"
+              className="hidden md:inline-flex items-center px-6 py-2.5 rounded-full text-base font-semibold text-white border border-white/70 tracking-wide transition-all duration-200 hover:bg-white hover:text-[#1B5558]"
             >
               Join Now
             </a>
@@ -77,7 +78,7 @@ export default function Navbar() {
           <a
             href="/membership"
             onClick={() => setMenuOpen(false)}
-            className="inline-flex items-center justify-center px-6 py-2.5 rounded-full text-sm font-semibold text-white border border-white/70 mt-1 tracking-wide transition-all duration-200 hover:bg-white hover:text-[#1B4F72]"
+            className="inline-flex items-center justify-center px-6 py-2.5 rounded-full text-sm font-semibold text-white border border-white/70 mt-1 tracking-wide transition-all duration-200 hover:bg-white hover:text-[#1B5558]"
           >
             Join Now
           </a>

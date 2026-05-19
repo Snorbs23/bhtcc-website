@@ -32,13 +32,13 @@ export default function Footer() {
   ];
 
   return (
-    <footer style={{ backgroundColor: "#1B4F72" }}>
+    <footer style={{ backgroundColor: "#1B5558" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
           {/* Left — Logo + social */}
           <div>
             <a href="/" className="inline-block">
-              <Image src="/logo.png" alt="BHTCC" width={120} height={120} className="object-contain block" />
+              <Image src="/BHTCClong.png" alt="BHTCC" width={180} height={60} className="object-contain block" />
             </a>
             <p className="mt-3 text-xs leading-relaxed" style={{ color: "rgba(255,255,255,0.5)" }}>
               Fostering bilateral trade and investment between Bhutan and Thailand.

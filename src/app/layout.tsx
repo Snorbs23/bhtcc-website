@@ -14,9 +14,9 @@ export const metadata: Metadata = {
   description:
     "The official bilateral chamber connecting businesses between the Kingdom of Bhutan and the Kingdom of Thailand.",
   icons: {
-    icon: '/favicon-32.png',
-    shortcut: '/favicon-32.png',
-    apple: '/apple-icon.png',
+    icon: '/LogoOnly.png',
+    shortcut: '/LogoOnly.png',
+    apple: '/LogoOnly.png',
   },
 };
 

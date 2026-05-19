@@ -42,20 +42,20 @@ export default function News() {
           className="mb-14"
         >
           <div className="inline-flex items-center gap-2 mb-4">
-            <span className="w-6 h-px" style={{ backgroundColor: "#C9960C" }} />
-            <span className="text-xs font-semibold uppercase tracking-widest" style={{ color: "#C9960C" }}>
+            <span className="w-6 h-px" style={{ backgroundColor: "#C5973E" }} />
+            <span className="text-xs font-semibold uppercase tracking-widest" style={{ color: "#C5973E" }}>
               Latest News
             </span>
-            <span className="w-6 h-px" style={{ backgroundColor: "#C9960C" }} />
+            <span className="w-6 h-px" style={{ backgroundColor: "#C5973E" }} />
           </div>
           <div className="flex items-end justify-between">
-            <h2 className="text-4xl lg:text-5xl font-extrabold leading-tight" style={{ color: "#1B4F72" }}>
+            <h2 className="text-4xl lg:text-5xl font-extrabold leading-tight" style={{ color: "#1B5558" }}>
               News &amp; Updates
             </h2>
             <a
               href="/news"
               className="hidden sm:inline-flex items-center gap-1.5 text-sm font-semibold transition-colors duration-200 hover:opacity-70"
-              style={{ color: "#1B4F72" }}
+              style={{ color: "#1B5558" }}
             >
               View All News
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
@@ -80,7 +80,7 @@ export default function News() {
               <div className="flex items-center justify-between mb-5">
                 <span
                   className="text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full"
-                  style={{ backgroundColor: "#EAF2F8", color: "#1B4F72" }}
+                  style={{ backgroundColor: "#E8F4F2", color: "#1B5558" }}
                 >
                   {item.category}
                 </span>
@@ -89,7 +89,7 @@ export default function News() {
 
               <h3
                 className="text-base font-bold leading-snug mb-3 group-hover:opacity-75 transition-opacity duration-200"
-                style={{ color: "#1B4F72" }}
+                style={{ color: "#1B5558" }}
               >
                 {item.headline}
               </h3>
@@ -98,7 +98,7 @@ export default function News() {
                 {item.excerpt}
               </p>
 
-              <div className="mt-6 flex items-center gap-1.5 text-sm font-semibold" style={{ color: "#C9960C" }}>
+              <div className="mt-6 flex items-center gap-1.5 text-sm font-semibold" style={{ color: "#C5973E" }}>
                 Read More
                 <svg
                   width="14"
@@ -126,7 +126,7 @@ export default function News() {
           <a
             href="/news"
             className="inline-flex items-center gap-2 px-7 py-3 rounded-full text-sm font-semibold text-white transition-opacity duration-200 hover:opacity-90"
-            style={{ backgroundColor: "#1B4F72" }}
+            style={{ backgroundColor: "#1B5558" }}
           >
             View All News
           </a>

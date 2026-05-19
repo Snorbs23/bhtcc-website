@@ -26,12 +26,12 @@ function CheckIcon({ color }: { color: string }) {
   return (
     <span
       className="mt-0.5 flex-shrink-0 w-4 h-4 rounded-full flex items-center justify-center"
-      style={{ backgroundColor: color === "gold" ? "#FEF9EC" : "#EAF2F8" }}
+      style={{ backgroundColor: color === "gold" ? "#FEF9EC" : "#E8F4F2" }}
     >
       <svg width="10" height="8" viewBox="0 0 10 8" fill="none" aria-hidden="true">
         <path
           d="M1 4L3.5 6.5L9 1"
-          stroke={color === "gold" ? "#C9960C" : "#1B4F72"}
+          stroke={color === "gold" ? "#C5973E" : "#1B5558"}
           strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -49,19 +49,19 @@ export default function MembershipPage() {
         {/* Page header */}
         <div
           className="pt-32 pb-16 text-center"
-          style={{ backgroundColor: "#EAF2F8" }}
+          style={{ backgroundColor: "#E8F4F2" }}
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="inline-flex items-center gap-2 mb-4">
-              <span className="w-6 h-px" style={{ backgroundColor: "#C9960C" }} />
-              <span className="text-xs font-semibold uppercase tracking-widest" style={{ color: "#C9960C" }}>
+              <span className="w-6 h-px" style={{ backgroundColor: "#C5973E" }} />
+              <span className="text-xs font-semibold uppercase tracking-widest" style={{ color: "#C5973E" }}>
                 Membership Plans
               </span>
-              <span className="w-6 h-px" style={{ backgroundColor: "#C9960C" }} />
+              <span className="w-6 h-px" style={{ backgroundColor: "#C5973E" }} />
             </div>
             <h1
               className="text-5xl lg:text-6xl font-extrabold leading-tight"
-              style={{ color: "#1B4F72" }}
+              style={{ color: "#1B5558" }}
             >
               Join the Chamber
             </h1>
@@ -80,16 +80,16 @@ export default function MembershipPage() {
                 <div className="mb-1">
                   <span
                     className="text-xs font-semibold uppercase tracking-widest"
-                    style={{ color: "#C9960C" }}
+                    style={{ color: "#C5973E" }}
                   >
                     Individual
                   </span>
                 </div>
-                <h2 className="text-xl font-bold mb-3" style={{ color: "#1B4F72" }}>
+                <h2 className="text-xl font-bold mb-3" style={{ color: "#1B5558" }}>
                   Individual / Sole Proprietor
                 </h2>
                 <div className="flex items-baseline gap-1 pb-6 border-b border-gray-100">
-                  <span className="text-4xl font-extrabold" style={{ color: "#1B4F72" }}>
+                  <span className="text-4xl font-extrabold" style={{ color: "#1B5558" }}>
                     THB 3,000
                   </span>
                   <span className="text-gray-400 text-sm font-medium">/year</span>
@@ -106,8 +106,8 @@ export default function MembershipPage() {
 
                 <a
                   href="/#contact"
-                  className="mt-8 block text-center px-6 py-3 rounded-full text-sm font-semibold border-2 transition-all duration-200 hover:bg-[#1B4F72] hover:text-white"
-                  style={{ color: "#1B4F72", borderColor: "#1B4F72" }}
+                  className="mt-8 block text-center px-6 py-3 rounded-full text-sm font-semibold border-2 transition-all duration-200 hover:bg-[#1B5558] hover:text-white"
+                  style={{ color: "#1B5558", borderColor: "#1B5558" }}
                 >
                   Apply Now
                 </a>
@@ -116,27 +116,27 @@ export default function MembershipPage() {
               {/* Card 2 — Corporate */}
               <div
                 className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 relative overflow-hidden flex flex-col"
-                style={{ borderTop: "4px solid #C9960C" }}
+                style={{ borderTop: "4px solid #C5973E" }}
               >
                 <div
                   className="absolute top-4 right-6 text-xs font-bold px-3 py-1 rounded-full"
-                  style={{ backgroundColor: "#FEF9EC", color: "#C9960C" }}
+                  style={{ backgroundColor: "#FEF9EC", color: "#C5973E" }}
                 >
                   Most Popular
                 </div>
                 <div className="mb-1">
                   <span
                     className="text-xs font-semibold uppercase tracking-widest"
-                    style={{ color: "#C9960C" }}
+                    style={{ color: "#C5973E" }}
                   >
                     Corporate
                   </span>
                 </div>
-                <h2 className="text-xl font-bold mb-3" style={{ color: "#1B4F72" }}>
+                <h2 className="text-xl font-bold mb-3" style={{ color: "#1B5558" }}>
                   Corporate / Govt / NGO
                 </h2>
                 <div className="flex items-baseline gap-1 pb-6 border-b border-gray-100">
-                  <span className="text-4xl font-extrabold" style={{ color: "#1B4F72" }}>
+                  <span className="text-4xl font-extrabold" style={{ color: "#1B5558" }}>
                     THB 5,000
                   </span>
                   <span className="text-gray-400 text-sm font-medium">/year</span>
@@ -154,7 +154,7 @@ export default function MembershipPage() {
                 <a
                   href="/#contact"
                   className="mt-8 block text-center px-6 py-3 rounded-full text-sm font-semibold text-white transition-all duration-200 hover:opacity-90"
-                  style={{ backgroundColor: "#1B4F72" }}
+                  style={{ backgroundColor: "#1B5558" }}
                 >
                   Apply Now
                 </a>

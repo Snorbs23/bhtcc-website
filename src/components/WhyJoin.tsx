@@ -53,15 +53,15 @@ export default function WhyJoin() {
           className="text-center mb-16"
         >
           <div className="inline-flex items-center gap-2 mb-4">
-            <span className="w-6 h-0.5" style={{ backgroundColor: "#C9960C" }} />
-            <span className="text-xs font-semibold uppercase tracking-widest" style={{ color: "#C9960C" }}>
+            <span className="w-6 h-0.5" style={{ backgroundColor: "#C5973E" }} />
+            <span className="text-xs font-semibold uppercase tracking-widest" style={{ color: "#C5973E" }}>
               Membership Benefits
             </span>
-            <span className="w-6 h-0.5" style={{ backgroundColor: "#C9960C" }} />
+            <span className="w-6 h-0.5" style={{ backgroundColor: "#C5973E" }} />
           </div>
           <h2
             className="text-4xl lg:text-5xl font-extrabold leading-tight"
-            style={{ color: "#1B4F72" }}
+            style={{ color: "#1B5558" }}
           >
             Why Join BHTCC
           </h2>
@@ -76,12 +76,12 @@ export default function WhyJoin() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.08 }}
               className="pt-6 border-t-2"
-              style={{ borderColor: "#C9960C" }}
+              style={{ borderColor: "#C5973E" }}
             >
-              <div className="text-sm font-bold mb-2" style={{ color: "#C9960C" }}>
+              <div className="text-sm font-bold mb-2" style={{ color: "#C5973E" }}>
                 {reason.number}
               </div>
-              <h3 className="text-lg font-bold mb-2" style={{ color: "#1B4F72" }}>
+              <h3 className="text-lg font-bold mb-2" style={{ color: "#1B5558" }}>
                 {reason.title}
               </h3>
               <p className="text-gray-500 text-sm leading-relaxed">{reason.description}</p>

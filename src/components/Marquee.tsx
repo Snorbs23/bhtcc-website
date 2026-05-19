@@ -31,11 +31,11 @@ export default function Marquee() {
           <span
             key={index}
             className="inline-flex items-center gap-3 mx-6 text-sm font-semibold tracking-wide uppercase"
-            style={{ color: "#1B4F72" }}
+            style={{ color: "#1B5558" }}
           >
             <span
               className="inline-block w-1.5 h-1.5 rounded-full flex-shrink-0"
-              style={{ backgroundColor: "#C9960C" }}
+              style={{ backgroundColor: "#C5973E" }}
             />
             {item}
           </span>
