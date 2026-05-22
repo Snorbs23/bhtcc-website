@@ -23,13 +23,13 @@ export default function Members() {
           className="text-center mb-14"
         >
           <div className="inline-flex items-center gap-2 mb-4">
-            <span className="w-6 h-px" style={{ backgroundColor: "#C5973E" }} />
-            <span className="text-xs font-semibold uppercase tracking-widest" style={{ color: "#C5973E" }}>
+            <span className="w-6 h-px" style={{ backgroundColor: "#E1A101" }} />
+            <span className="text-xs font-semibold uppercase tracking-widest" style={{ color: "#E1A101" }}>
               Network
             </span>
-            <span className="w-6 h-px" style={{ backgroundColor: "#C5973E" }} />
+            <span className="w-6 h-px" style={{ backgroundColor: "#E1A101" }} />
           </div>
-          <h2 className="text-4xl lg:text-5xl font-extrabold leading-tight mb-4" style={{ color: "#1B5558" }}>
+          <h2 className="text-4xl lg:text-5xl font-extrabold leading-tight mb-4" style={{ color: "#4D7084" }}>
             Our Members
           </h2>
           <p className="text-gray-500 text-lg max-w-xl mx-auto">
@@ -82,7 +82,7 @@ export default function Members() {
           <a
             href="/membership"
             className="inline-flex items-center gap-2 text-sm font-semibold transition-colors duration-200 hover:opacity-70"
-            style={{ color: "#1B5558" }}
+            style={{ color: "#4D7084" }}
           >
             Become a member
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">

@@ -18,7 +18,7 @@ const corporateBenefits = [
 
 export default function Membership() {
   return (
-    <section id="membership" className="py-20 lg:py-28" style={{ backgroundColor: "#E8F4F2" }}>
+    <section id="membership" className="py-20 lg:py-28" style={{ backgroundColor: "#D6E4EC" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -28,15 +28,15 @@ export default function Membership() {
           className="text-center mb-14"
         >
           <div className="inline-flex items-center gap-2 mb-4">
-            <span className="w-6 h-0.5" style={{ backgroundColor: "#C5973E" }} />
-            <span className="text-xs font-semibold uppercase tracking-widest" style={{ color: "#C5973E" }}>
+            <span className="w-6 h-0.5" style={{ backgroundColor: "#E1A101" }} />
+            <span className="text-xs font-semibold uppercase tracking-widest" style={{ color: "#E1A101" }}>
               Membership Plans
             </span>
-            <span className="w-6 h-0.5" style={{ backgroundColor: "#C5973E" }} />
+            <span className="w-6 h-0.5" style={{ backgroundColor: "#E1A101" }} />
           </div>
           <h2
             className="text-4xl lg:text-5xl font-extrabold leading-tight"
-            style={{ color: "#1B5558" }}
+            style={{ color: "#4D7084" }}
           >
             Join the Chamber
           </h2>
@@ -55,11 +55,11 @@ export default function Membership() {
           {/* Card 1 — Individual */}
           <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300">
             <div className="mb-6">
-              <h3 className="text-xl font-bold mb-1" style={{ color: "#1B5558" }}>
+              <h3 className="text-xl font-bold mb-1" style={{ color: "#4D7084" }}>
                 Individual / Sole Proprietor
               </h3>
               <div className="flex items-baseline gap-1 mt-3">
-                <span className="text-4xl font-extrabold" style={{ color: "#1B5558" }}>
+                <span className="text-4xl font-extrabold" style={{ color: "#4D7084" }}>
                   THB 3,000
                 </span>
                 <span className="text-gray-400 text-sm font-medium">/year</span>
@@ -71,10 +71,10 @@ export default function Membership() {
                 <li key={benefit} className="flex items-start gap-3">
                   <span
                     className="mt-1 flex-shrink-0 w-4 h-4 rounded-full flex items-center justify-center"
-                    style={{ backgroundColor: "#E8F4F2" }}
+                    style={{ backgroundColor: "#D6E4EC" }}
                   >
                     <svg width="10" height="8" viewBox="0 0 10 8" fill="none">
-                      <path d="M1 4L3.5 6.5L9 1" stroke="#1B5558" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M1 4L3.5 6.5L9 1" stroke="#4D7084" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </span>
                   <span className="text-gray-600 text-sm leading-relaxed">{benefit}</span>
@@ -84,8 +84,8 @@ export default function Membership() {
 
             <a
               href="#contact"
-              className="block text-center px-6 py-3 rounded-full text-sm font-semibold border-2 transition-all duration-200 hover:bg-[#1B5558] hover:text-white"
-              style={{ color: "#1B5558", borderColor: "#1B5558" }}
+              className="block text-center px-6 py-3 rounded-full text-sm font-semibold border-2 transition-all duration-200 hover:bg-[#4D7084] hover:text-white"
+              style={{ color: "#4D7084", borderColor: "#4D7084" }}
             >
               Apply Now
             </a>
@@ -94,20 +94,20 @@ export default function Membership() {
           {/* Card 2 — Corporate */}
           <div
             className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 relative overflow-hidden"
-            style={{ borderTop: "4px solid #C5973E" }}
+            style={{ borderTop: "4px solid #E1A101" }}
           >
             <div
               className="absolute top-4 right-6 text-xs font-bold px-3 py-1 rounded-full"
-              style={{ backgroundColor: "#FEF9EC", color: "#C5973E" }}
+              style={{ backgroundColor: "#FDF5D9", color: "#E1A101" }}
             >
               Most Popular
             </div>
             <div className="mb-6">
-              <h3 className="text-xl font-bold mb-1" style={{ color: "#1B5558" }}>
+              <h3 className="text-xl font-bold mb-1" style={{ color: "#4D7084" }}>
                 Corporate / Govt / NGO
               </h3>
               <div className="flex items-baseline gap-1 mt-3">
-                <span className="text-4xl font-extrabold" style={{ color: "#1B5558" }}>
+                <span className="text-4xl font-extrabold" style={{ color: "#4D7084" }}>
                   THB 5,000
                 </span>
                 <span className="text-gray-400 text-sm font-medium">/year</span>
@@ -119,10 +119,10 @@ export default function Membership() {
                 <li key={benefit} className="flex items-start gap-3">
                   <span
                     className="mt-1 flex-shrink-0 w-4 h-4 rounded-full flex items-center justify-center"
-                    style={{ backgroundColor: "#FEF9EC" }}
+                    style={{ backgroundColor: "#FDF5D9" }}
                   >
                     <svg width="10" height="8" viewBox="0 0 10 8" fill="none">
-                      <path d="M1 4L3.5 6.5L9 1" stroke="#C5973E" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M1 4L3.5 6.5L9 1" stroke="#E1A101" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </span>
                   <span className="text-gray-600 text-sm leading-relaxed">{benefit}</span>
@@ -133,7 +133,7 @@ export default function Membership() {
             <a
               href="#contact"
               className="block text-center px-6 py-3 rounded-full text-sm font-semibold text-white transition-all duration-200 hover:opacity-90"
-              style={{ backgroundColor: "#1B5558" }}
+              style={{ backgroundColor: "#4D7084" }}
             >
               Apply Now
             </a>
@@ -151,7 +151,7 @@ export default function Membership() {
           <a
             href="#contact"
             className="inline-flex items-center px-8 py-4 rounded-full text-base font-semibold text-white shadow-lg transition-all duration-200 hover:opacity-90 hover:-translate-y-0.5"
-            style={{ backgroundColor: "#1B5558" }}
+            style={{ backgroundColor: "#4D7084" }}
           >
             Apply for Membership
           </a>

@@ -32,7 +32,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer style={{ backgroundColor: "#1B5558" }}>
+    <footer style={{ backgroundColor: "#4D7084" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
           {/* Left — Logo + social */}
@@ -64,7 +64,7 @@ export default function Footer() {
           {/* Center — Copyright */}
           <div className="text-center md:pt-1">
             <p className="text-xs" style={{ color: "rgba(255,255,255,0.5)" }}>
-              © 2025 Bhutan-Thai Chamber of Commerce.
+              © 2025-2026 Bhutan-Thai Chamber of Commerce.
               <br />
               All rights reserved.
             </p>
@@ -95,7 +95,7 @@ export default function Footer() {
           style={{ borderColor: "rgba(255,255,255,0.1)" }}
         >
           <p className="text-xs" style={{ color: "rgba(255,255,255,0.35)" }}>
-            Registered under the laws of the Kingdom of Bhutan. All membership applications are subject to Board approval.
+            Currently incorporating in Bangkok, Thailand under the Chamber of Commerce Act B.E. 2509. All membership applications are subject to Board approval.
           </p>
         </div>
       </div>

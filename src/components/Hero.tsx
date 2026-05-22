@@ -80,7 +80,7 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="/membership"
-              className="inline-flex items-center px-8 py-4 rounded-full text-base font-semibold text-white bg-[#C5973E] shadow-lg transition-all duration-200 hover:brightness-110 hover:-translate-y-0.5"
+              className="inline-flex items-center px-8 py-4 rounded-full text-base font-semibold text-white bg-[#E1A101] shadow-lg transition-all duration-200 hover:brightness-110 hover:-translate-y-0.5"
             >
               Become a Member
             </a>

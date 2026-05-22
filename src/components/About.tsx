@@ -38,14 +38,14 @@ export default function About() {
             transition={{ duration: 0.6 }}
           >
             <div className="inline-flex items-center gap-2 mb-4">
-              <span className="w-6 h-0.5" style={{ backgroundColor: "#C5973E" }} />
-              <span className="text-xs font-semibold uppercase tracking-widest" style={{ color: "#C5973E" }}>
+              <span className="w-6 h-0.5" style={{ backgroundColor: "#E1A101" }} />
+              <span className="text-xs font-semibold uppercase tracking-widest" style={{ color: "#E1A101" }}>
                 Who We Are
               </span>
             </div>
             <h2
               className="text-5xl font-black leading-tight mb-6"
-              style={{ color: "#1B5558" }}
+              style={{ color: "#4D7084" }}
             >
               About BHTCC
             </h2>
@@ -55,7 +55,7 @@ export default function About() {
             <p className="text-gray-500 text-lg leading-relaxed mb-8">
               Everything we do is built to make bilateral trade faster, simpler, and more rewarding for our members.
             </p>
-            <p className="text-sm font-semibold tracking-widest" style={{ color: "#C5973E" }}>
+            <p className="text-sm font-semibold tracking-widest" style={{ color: "#E1A101" }}>
               Est. 2025 · Bangkok &amp; Thimphu · Bilateral Trade
             </p>
           </motion.div>
@@ -73,14 +73,14 @@ export default function About() {
                   <div className="flex items-start gap-5">
                     <span
                       className="text-sm font-bold tabular-nums mt-0.5 flex-shrink-0"
-                      style={{ color: "#C5973E" }}
+                      style={{ color: "#E1A101" }}
                     >
                       {feature.number}
                     </span>
                     <div>
                       <h3
                         className="text-base font-bold mb-1"
-                        style={{ color: "#1B5558" }}
+                        style={{ color: "#4D7084" }}
                       >
                         {feature.title}
                       </h3>
@@ -95,7 +95,7 @@ export default function About() {
           </motion.div>
         </div>
       </div>
-      <div className="h-24 bg-gradient-to-b from-white to-[#F5F0E8]" />
+      <div className="h-24 bg-gradient-to-b from-white to-[#EEDFC0]" />
     </section>
   );
 }

@@ -39,28 +39,28 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" style={{ background: "#F5F0E8" }} className="py-24 px-6">
+    <section id="contact" style={{ background: "#EEDFC0" }} className="py-24 px-6">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
         <div>
-          <p className="text-[#C5973E] text-xs tracking-widest font-semibold mb-2 flex items-center gap-2">
-            <span className="inline-block w-6 h-px bg-[#C5973E]"></span> CONTACT US
+          <p className="text-[#E1A101] text-xs tracking-widest font-semibold mb-2 flex items-center gap-2">
+            <span className="inline-block w-6 h-px bg-[#E1A101]"></span> CONTACT US
           </p>
-          <h2 className="text-4xl font-black text-[#1B5558] mb-4">Get in Touch</h2>
+          <h2 className="text-4xl font-black text-[#4D7084] mb-4">Get in Touch</h2>
           <p className="text-gray-500 mb-10">Whether you are looking to join, partner, or simply learn more — we would love to hear from you.</p>
           <div className="space-y-6">
             <a href="mailto:contact@bhutanthailandchamber.org" className="flex justify-between items-center border-b border-gray-200 pb-4 group">
               <div>
-                <p className="text-[#C5973E] text-xs tracking-widest mb-1">EMAIL</p>
-                <p className="text-[#1B5558] text-sm">contact@bhutanthailandchamber.org</p>
+                <p className="text-[#E1A101] text-xs tracking-widest mb-1">EMAIL</p>
+                <p className="text-[#4D7084] text-sm">contact@bhutanthailandchamber.org</p>
               </div>
-              <span className="text-[#C5973E] group-hover:translate-x-1 transition-transform">→</span>
+              <span className="text-[#E1A101] group-hover:translate-x-1 transition-transform">→</span>
             </a>
             <a href="https://bhutanthailandchamber.org" className="flex justify-between items-center border-b border-gray-200 pb-4 group">
               <div>
-                <p className="text-[#C5973E] text-xs tracking-widest mb-1">WEBSITE</p>
-                <p className="text-[#1B5558] text-sm">bhutanthailandchamber.org</p>
+                <p className="text-[#E1A101] text-xs tracking-widest mb-1">WEBSITE</p>
+                <p className="text-[#4D7084] text-sm">bhutanthailandchamber.org</p>
               </div>
-              <span className="text-[#C5973E] group-hover:translate-x-1 transition-transform">→</span>
+              <span className="text-[#E1A101] group-hover:translate-x-1 transition-transform">→</span>
             </a>
           </div>
         </div>
@@ -68,20 +68,20 @@ export default function Contact() {
           <div className="grid grid-cols-2 gap-4">
             <div>
               <label className="text-xs tracking-widest text-gray-400 block mb-1">FIRST NAME</label>
-              <input name="firstName" value={formData.firstName} onChange={handleChange} required placeholder="First Name" className="w-full border-b border-gray-300 bg-transparent py-2 text-[#1B5558] focus:outline-none focus:border-[#1B5558]" />
+              <input name="firstName" value={formData.firstName} onChange={handleChange} required placeholder="First Name" className="w-full border-b border-gray-300 bg-transparent py-2 text-[#4D7084] focus:outline-none focus:border-[#4D7084]" />
             </div>
             <div>
               <label className="text-xs tracking-widest text-gray-400 block mb-1">LAST NAME</label>
-              <input name="lastName" value={formData.lastName} onChange={handleChange} required placeholder="Last Name" className="w-full border-b border-gray-300 bg-transparent py-2 text-[#1B5558] focus:outline-none focus:border-[#1B5558]" />
+              <input name="lastName" value={formData.lastName} onChange={handleChange} required placeholder="Last Name" className="w-full border-b border-gray-300 bg-transparent py-2 text-[#4D7084] focus:outline-none focus:border-[#4D7084]" />
             </div>
           </div>
           <div>
             <label className="text-xs tracking-widest text-gray-400 block mb-1">EMAIL</label>
-            <input name="email" type="email" value={formData.email} onChange={handleChange} required placeholder="you@company.com" className="w-full border-b border-gray-300 bg-transparent py-2 text-[#1B5558] focus:outline-none focus:border-[#1B5558]" />
+            <input name="email" type="email" value={formData.email} onChange={handleChange} required placeholder="you@company.com" className="w-full border-b border-gray-300 bg-transparent py-2 text-[#4D7084] focus:outline-none focus:border-[#4D7084]" />
           </div>
           <div>
             <label className="text-xs tracking-widest text-gray-400 block mb-1">AREA OF INTEREST</label>
-            <select name="interest" value={formData.interest} onChange={handleChange} required className="w-full border-b border-gray-300 bg-transparent py-2 text-[#1B5558] focus:outline-none focus:border-[#1B5558]">
+            <select name="interest" value={formData.interest} onChange={handleChange} required className="w-full border-b border-gray-300 bg-transparent py-2 text-[#4D7084] focus:outline-none focus:border-[#4D7084]">
               <option value="">Select an option</option>
               <option>Membership Application</option>
               <option>Trade Partnership</option>
@@ -92,9 +92,9 @@ export default function Contact() {
           </div>
           <div>
             <label className="text-xs tracking-widest text-gray-400 block mb-1">MESSAGE</label>
-            <textarea name="message" value={formData.message} onChange={handleChange} required rows={3} placeholder="Tell us how we can help..." className="w-full border-b border-gray-300 bg-transparent py-2 text-[#1B5558] focus:outline-none focus:border-[#1B5558] resize-none" />
+            <textarea name="message" value={formData.message} onChange={handleChange} required rows={3} placeholder="Tell us how we can help..." className="w-full border-b border-gray-300 bg-transparent py-2 text-[#4D7084] focus:outline-none focus:border-[#4D7084] resize-none" />
           </div>
-          <button type="submit" disabled={status === "sending"} className="bg-[#1B5558] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#8B3A2A] transition-colors duration-200 disabled:opacity-50">
+          <button type="submit" disabled={status === "sending"} className="bg-[#4D7084] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#B84E32] transition-colors duration-200 disabled:opacity-50">
             {status === "sending" ? "Sending..." : "Send Message"}
           </button>
           {status === "success" && <p className="text-green-600 text-sm">Thank you! We will be in touch within 1–2 business days.</p>}
