@@ -40,7 +40,16 @@ export default function Contact() {
 
   return (
     <section id="contact" style={{ background: "#EEDFC0" }} className="py-24 px-6">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
+      <div
+        className="max-w-6xl mx-auto rounded-3xl p-10 md:p-14 grid grid-cols-1 md:grid-cols-2 gap-16"
+        style={{
+          background: "rgba(255,255,255,0.45)",
+          backdropFilter: "blur(20px)",
+          WebkitBackdropFilter: "blur(20px)",
+          border: "1px solid rgba(255,255,255,0.6)",
+          boxShadow: "0 8px 32px rgba(0,0,0,0.08)",
+        }}
+      >
         <div>
           <p className="text-[#E1A101] text-xs tracking-widest font-semibold mb-2 flex items-center gap-2">
             <span className="inline-block w-6 h-px bg-[#E1A101]"></span> CONTACT US
