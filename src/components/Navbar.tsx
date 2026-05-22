@@ -1,9 +1,16 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 60);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   const navLinks = [
     { label: "About", href: "/#about" },
@@ -12,13 +19,44 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="absolute top-0 left-0 right-0 z-50 py-2">
+    <nav
+      className="fixed top-0 left-0 right-0 z-50 py-2 transition-all duration-300"
+      style={
+        scrolled
+          ? { background: "rgba(255,255,255,0.85)", backdropFilter: "blur(16px)", WebkitBackdropFilter: "blur(16px)", borderBottom: "1px solid rgba(0,0,0,0.06)" }
+          : {}
+      }
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          {/* Logo + Text */}
+          {/* Logo */}
           <a href="/" className="flex items-center gap-3">
-            <img src="/BHTCClong.png" alt="BHTCC" className="hidden md:block" style={{ height: '70px', width: 'auto', objectFit: 'contain' }} />
-            <img src="/BHTCC.png" alt="BHTCC" className="block md:hidden" style={{ height: '50px', width: 'auto', objectFit: 'contain' }} />
+            <img
+              src="/BHTCClong.png"
+              alt="BHTCC"
+              className="hidden md:block"
+              style={{
+                height: '70px',
+                width: 'auto',
+                objectFit: 'contain',
+                filter: scrolled ? 'none' : 'brightness(0) invert(1)',
+                opacity: scrolled ? 1 : 0.9,
+                transition: 'filter 0.3s, opacity 0.3s',
+              }}
+            />
+            <img
+              src="/BHTCC.png"
+              alt="BHTCC"
+              className="block md:hidden"
+              style={{
+                height: '50px',
+                width: 'auto',
+                objectFit: 'contain',
+                filter: scrolled ? 'none' : 'brightness(0) invert(1)',
+                opacity: scrolled ? 1 : 0.9,
+                transition: 'filter 0.3s, opacity 0.3s',
+              }}
+            />
           </a>
 
           {/* Desktop nav links */}
@@ -27,7 +65,8 @@ export default function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-white/90 font-medium text-lg tracking-wide transition-colors duration-200 hover:text-white"
+                className="font-medium text-lg tracking-wide transition-colors duration-200"
+                style={{ color: scrolled ? '#4D7084' : 'rgba(255,255,255,0.9)' }}
               >
                 {link.label}
               </a>
@@ -38,7 +77,20 @@ export default function Navbar() {
           <div className="flex items-center gap-4">
             <a
               href="/membership"
-              className="hidden md:inline-flex items-center px-6 py-2.5 rounded-full text-base font-semibold text-white border border-white/70 tracking-wide transition-all duration-200 hover:bg-white hover:text-[#4D7084]"
+              className="hidden md:inline-flex items-center px-6 py-2.5 rounded-full text-base font-semibold tracking-wide transition-all duration-200"
+              style={
+                scrolled
+                  ? { color: '#4D7084', border: '1.5px solid #4D7084' }
+                  : { color: 'white', border: '1.5px solid rgba(255,255,255,0.7)' }
+              }
+              onMouseEnter={e => {
+                (e.currentTarget as HTMLElement).style.background = scrolled ? '#4D7084' : 'rgba(255,255,255,0.15)';
+                (e.currentTarget as HTMLElement).style.color = scrolled ? 'white' : 'white';
+              }}
+              onMouseLeave={e => {
+                (e.currentTarget as HTMLElement).style.background = 'transparent';
+                (e.currentTarget as HTMLElement).style.color = scrolled ? '#4D7084' : 'white';
+              }}
             >
               Join Now
             </a>
@@ -49,9 +101,9 @@ export default function Navbar() {
               onClick={() => setMenuOpen(!menuOpen)}
               aria-label="Toggle menu"
             >
-              <span className={`block w-5 h-px transition-all duration-300 bg-white ${menuOpen ? "rotate-45 translate-y-[7px]" : ""}`} />
-              <span className={`block w-5 h-px transition-all duration-300 bg-white ${menuOpen ? "opacity-0" : ""}`} />
-              <span className={`block w-5 h-px transition-all duration-300 bg-white ${menuOpen ? "-rotate-45 -translate-y-[7px]" : ""}`} />
+              <span className={`block w-5 h-px transition-all duration-300 ${scrolled ? 'bg-[#4D7084]' : 'bg-white'} ${menuOpen ? "rotate-45 translate-y-[7px]" : ""}`} />
+              <span className={`block w-5 h-px transition-all duration-300 ${scrolled ? 'bg-[#4D7084]' : 'bg-white'} ${menuOpen ? "opacity-0" : ""}`} />
+              <span className={`block w-5 h-px transition-all duration-300 ${scrolled ? 'bg-[#4D7084]' : 'bg-white'} ${menuOpen ? "-rotate-45 -translate-y-[7px]" : ""}`} />
             </button>
           </div>
         </div>
