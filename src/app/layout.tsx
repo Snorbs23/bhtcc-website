@@ -10,9 +10,33 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "BHTCC | Bhutan-Thai Chamber of Commerce",
+  metadataBase: new URL("https://bhutanthailandchamber.org"),
+  title: "BHTCC | Bhutan-Thailand Chamber of Commerce",
   description:
-    "The official bilateral chamber connecting businesses between the Kingdom of Bhutan and the Kingdom of Thailand.",
+    "A Bhutan-Thailand business association in formation, connecting commerce and culture between two Buddhist kingdoms.",
+  openGraph: {
+    title: "Two Buddhist Kingdoms. One Bridge for Business and Culture.",
+    description:
+      "A Bhutan-Thailand business association in formation, connecting commerce and culture between two Buddhist kingdoms.",
+    url: "https://bhutanthailandchamber.org",
+    siteName: "Bhutan-Thailand Chamber of Commerce",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Bhutan-Thailand Chamber of Commerce",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Two Buddhist Kingdoms. One Bridge for Business and Culture.",
+    description:
+      "A Bhutan-Thailand business association in formation, connecting commerce and culture between two Buddhist kingdoms.",
+    images: ["/og-image.jpg"],
+  },
   icons: {
     icon: '/LogoOnly.png',
     shortcut: '/LogoOnly.png',

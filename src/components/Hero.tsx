@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 import { motion } from "framer-motion";
+import CalendlyLink from "@/components/CalendlyLink";
 
 const slides = [
   {
@@ -9,7 +10,7 @@ const slides = [
     alt: "Tiger's Nest Monastery, Bhutan",
   },
   {
-    url: "https://images.unsplash.com/photo-1563492065599-3520f775eeed?w=1920&q=80",
+    url: "/bangkok.jpg",
     alt: "Bangkok, Thailand",
   },
 ];
@@ -31,8 +32,11 @@ export default function Hero() {
   }, [next]);
 
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      {/* Slides — crossfade via opacity */}
+    <section
+      className="relative flex items-center justify-center overflow-hidden"
+      style={{ height: "88svh", minHeight: "560px" }}
+    >
+      {/* Slides, crossfade via opacity */}
       {slides.map((slide, i) => (
         <div
           key={slide.url}
@@ -70,34 +74,31 @@ export default function Hero() {
             className="mb-6 drop-shadow-sm"
             style={{ fontSize: 'clamp(2.8rem, 5.5vw, 5rem)', fontWeight: 900, lineHeight: 1.1, color: 'white' }}
           >
-            Bridging Business Between Bhutan and Thailand
+            Two Buddhist Kingdoms. One Bridge for Business and Culture.
           </h1>
 
-          <p className="text-white/70 max-w-xl mx-auto mb-10 leading-relaxed" style={{ fontSize: '1.125rem' }}>
-            The Bhutan-Thai Chamber of Commerce connects entrepreneurs, corporations, and government bodies to foster bilateral trade and investment.
+          <p className="text-white/90 max-w-xl mx-auto mb-10 leading-relaxed drop-shadow" style={{ fontSize: '1.125rem' }}>
+            Dinners, deals, and cultural exchange between Bangkok and Thimphu. An independent member community, now in formation.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="/membership"
+              href="/join"
               className="inline-flex items-center px-8 py-4 rounded-full text-base font-semibold text-white bg-[#E1A101] shadow-lg transition-all duration-200 hover:brightness-110 hover:-translate-y-0.5"
             >
-              Become a Member
+              Get Invited to Our Next Event
             </a>
-            <a
-              href="#about"
-              className="inline-flex items-center px-8 py-4 rounded-full text-base font-semibold border border-white text-white transition-all duration-200 hover:bg-white/10 hover:-translate-y-0.5"
-            >
-              Learn More
-            </a>
+            <CalendlyLink className="inline-flex items-center px-8 py-4 rounded-full text-base font-semibold border border-white text-white transition-all duration-200 hover:bg-white/10 hover:-translate-y-0.5">
+              Book an Intro Call
+            </CalendlyLink>
           </div>
         </motion.div>
       </div>
 
-      {/* Left arrow */}
+      {/* Left arrow, hidden on mobile (overlaps headline, converts nobody) */}
       <button
         onClick={prev}
-        className="absolute left-5 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full flex items-center justify-center text-white transition-all duration-200 hover:scale-105 focus:outline-none"
+        className="absolute left-5 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full hidden sm:flex items-center justify-center text-white transition-all duration-200 hover:scale-105 focus:outline-none"
         style={{ background: "rgba(255,255,255,0.15)", backdropFilter: "blur(6px)" }}
         aria-label="Previous slide"
       >
@@ -106,10 +107,10 @@ export default function Hero() {
         </svg>
       </button>
 
-      {/* Right arrow */}
+      {/* Right arrow, hidden on mobile */}
       <button
         onClick={next}
-        className="absolute right-5 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full flex items-center justify-center text-white transition-all duration-200 hover:scale-105 focus:outline-none"
+        className="absolute right-5 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full hidden sm:flex items-center justify-center text-white transition-all duration-200 hover:scale-105 focus:outline-none"
         style={{ background: "rgba(255,255,255,0.15)", backdropFilter: "blur(6px)" }}
         aria-label="Next slide"
       >
@@ -117,9 +118,6 @@ export default function Hero() {
           <path d="M7 5L11 9L7 13" stroke="white" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       </button>
-
-      {/* Bottom fade into About */}
-      <div className="absolute bottom-0 inset-x-0 h-16 z-10 bg-gradient-to-b from-transparent to-white pointer-events-none" />
 
       {/* Slide indicators */}
       <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2">

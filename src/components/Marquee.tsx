@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 
 export default function Marquee() {
   const items = [
+    "Networking Events",
     "Trade Facilitation",
+    "Cultural & Artistic Exchange",
     "Investment Access",
-    "Bilateral Networking",
-    "Market Entry",
-    "Business Delegations",
+    "Two Buddhist Kingdoms",
   ];
 
   // Repeat 3x for seamless infinite loop

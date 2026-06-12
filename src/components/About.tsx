@@ -5,23 +5,23 @@ import { motion } from "framer-motion";
 const features = [
   {
     number: "01",
-    title: "Trade Facilitation",
-    description: "Streamlining cross-border commerce between Bhutan and Thailand",
+    title: "Networking Events",
+    description: "Curated dinners, forums, and gatherings in Bangkok and Thimphu, the heart of what we do",
   },
   {
     number: "02",
-    title: "Investment Promotion",
-    description: "Connecting investors with opportunities in both markets",
+    title: "Trade Facilitation",
+    description: "Helping members move goods, services, and ideas between Bhutan and Thailand",
   },
   {
     number: "03",
-    title: "Policy Advocacy",
-    description: "Representing member interests to bilateral government bodies",
+    title: "Cultural and Artistic Exchange",
+    description: "Supporting cross-cultural artistic performance, ceremonies, and shared experiences between two Buddhist kingdoms",
   },
   {
     number: "04",
-    title: "Networking Events",
-    description: "Hosting delegations, forums, and business-matching sessions",
+    title: "Investment Access",
+    description: "Connecting members with curated opportunities in both markets",
   },
 ];
 
@@ -50,17 +50,20 @@ export default function About() {
               About BHTCC
             </h2>
             <p className="text-gray-500 text-lg leading-relaxed mb-3">
-              We are the primary bridge connecting businesses, investors, and governments between Bhutan and Thailand.
+              We are a bridge connecting founders, operators, investors, and artists between Bhutan and Thailand.
+            </p>
+            <p className="text-gray-500 text-lg leading-relaxed mb-3">
+              Everything we do is built to make the corridor between our two kingdoms more connected and more rewarding for our community.
             </p>
             <p className="text-gray-500 text-lg leading-relaxed mb-8">
-              Everything we do is built to make bilateral trade faster, simpler, and more rewarding for our members.
+              BHTCC is an independent, private member association currently in formation. We are not a government body.
             </p>
             <p className="text-sm font-semibold tracking-widest" style={{ color: "#E1A101" }}>
-              Est. 2025 · Bangkok &amp; Thimphu · Bilateral Trade
+              In formation · Bangkok &amp; Thimphu
             </p>
           </motion.div>
 
-          {/* Right column — feature rows */}
+          {/* Right column, feature rows */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}

@@ -5,39 +5,39 @@ import { motion } from "framer-motion";
 const reasons = [
   {
     number: "01",
-    title: "Market Access",
+    title: "Curated Network",
     description:
-      "Enter Thailand's dynamic ASEAN hub from Bhutan with expert guidance and on-the-ground support.",
+      "Belong to a hand-picked community of founders, operators, and artists across Bhutan and Thailand.",
   },
   {
     number: "02",
-    title: "Investment Opportunities",
+    title: "Market Access",
     description:
-      "Discover vetted investment prospects in both economies, curated by our expert network.",
+      "Enter Thailand's dynamic ASEAN hub or Bhutan's emerging market with guidance from members who know both.",
   },
   {
     number: "03",
-    title: "Government Relations",
+    title: "Cultural Programs",
     description:
-      "Benefit from our direct channels to bilateral ministries and trade policy bodies.",
+      "Access to performances, ceremonies, and shared cultural experiences across two Buddhist kingdoms.",
   },
   {
     number: "04",
-    title: "Trade Support",
+    title: "Investment Opportunities",
     description:
-      "Navigate customs, regulations, and logistics with ease through our dedicated trade desk.",
+      "Discover opportunities in both economies, surfaced by members doing business there.",
   },
   {
     number: "05",
-    title: "Elite Network",
+    title: "Member Gatherings",
     description:
-      "Connect with senior executives and decision-makers across Bhutan and Thailand.",
+      "Intimate dinners, forums, and delegations in Bangkok and Thimphu, by invitation.",
   },
   {
     number: "06",
-    title: "Thought Leadership",
+    title: "Founding Circle",
     description:
-      "Shape the future of Bhutan-Thailand commerce through forums, publications, and policy input.",
+      "Join early and help shape the community before membership formally opens.",
   },
 ];
 
@@ -55,7 +55,7 @@ export default function WhyJoin() {
           <div className="inline-flex items-center gap-2 mb-4">
             <span className="w-6 h-0.5" style={{ backgroundColor: "#E1A101" }} />
             <span className="text-xs font-semibold uppercase tracking-widest" style={{ color: "#E1A101" }}>
-              Membership Benefits
+              A Curated Community
             </span>
             <span className="w-6 h-0.5" style={{ backgroundColor: "#E1A101" }} />
           </div>
@@ -65,6 +65,9 @@ export default function WhyJoin() {
           >
             Why Join BHTCC
           </h2>
+          <p className="mt-4 text-gray-500 text-lg max-w-xl mx-auto">
+            A curated cross-border community of founders, operators, and artists from two Buddhist kingdoms.
+          </p>
         </motion.div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-10">

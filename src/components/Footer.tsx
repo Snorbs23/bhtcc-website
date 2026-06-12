@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   const socialLinks = [
@@ -35,13 +36,13 @@ export default function Footer() {
     <footer style={{ backgroundColor: "#4D7084" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
-          {/* Left — Logo + social */}
+          {/* Left, Logo + social */}
           <div>
-            <a href="/" className="inline-block">
+            <Link href="/" className="inline-block">
               <Image src="/BHTCClong.png" alt="BHTCC" width={240} height={80} className="object-contain block" style={{ height: '80px', width: 'auto', filter: 'brightness(0) invert(1)', opacity: 0.9 }} />
-            </a>
+            </Link>
             <p className="mt-3 text-xs leading-relaxed" style={{ color: "rgba(255,255,255,0.5)" }}>
-              Fostering bilateral trade and investment between Bhutan and Thailand.
+              Connecting commerce and culture between Bhutan and Thailand.
             </p>
             {/* Social icons */}
             <div className="mt-5 flex items-center gap-3">
@@ -61,21 +62,23 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Center — Copyright */}
+          {/* Center, Copyright */}
           <div className="text-center md:pt-1">
             <p className="text-xs" style={{ color: "rgba(255,255,255,0.5)" }}>
-              © 2025-2026 Bhutan-Thai Chamber of Commerce.
+              © 2026 Bhutan-Thailand Chamber of Commerce.
               <br />
               All rights reserved.
             </p>
           </div>
 
-          {/* Right — Nav links */}
+          {/* Right, Nav links */}
           <div className="flex flex-col sm:flex-row md:flex-col lg:flex-row items-start md:items-end gap-3 md:text-right">
             {[
               { label: "About", href: "/#about" },
+              { label: "Events", href: "/#events" },
               { label: "Membership", href: "/membership" },
-              { label: "Contact", href: "/#contact" },
+              { label: "Join", href: "/join" },
+              { label: "Contact", href: "/contact" },
             ].map((link) => (
               <a
                 key={link.label}
@@ -95,7 +98,7 @@ export default function Footer() {
           style={{ borderColor: "rgba(255,255,255,0.1)" }}
         >
           <p className="text-xs" style={{ color: "rgba(255,255,255,0.35)" }}>
-            Currently incorporating in Bangkok, Thailand under the Chamber of Commerce Act B.E. 2509. All membership applications are subject to Board approval.
+            The Bhutan-Thailand Chamber of Commerce is an association in formation. All membership applications will be subject to Board approval.
           </p>
         </div>
       </div>
