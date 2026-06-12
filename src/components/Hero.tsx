@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useCallback } from "react";
 import { motion } from "framer-motion";
-import CalendlyLink from "@/components/CalendlyLink";
 
 const slides = [
   {
@@ -34,7 +33,7 @@ export default function Hero() {
   return (
     <section
       className="relative flex items-center justify-center overflow-hidden"
-      style={{ height: "88svh", minHeight: "560px" }}
+      style={{ height: "82svh", minHeight: "520px" }}
     >
       {/* Slides, crossfade via opacity */}
       {slides.map((slide, i) => (
@@ -52,9 +51,6 @@ export default function Hero() {
 
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/40 z-10" />
-
-      {/* Top gradient for navbar legibility */}
-      <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-black/60 to-transparent z-10 pointer-events-none" />
 
       {/* Centered content */}
       <div className="relative z-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -74,23 +70,20 @@ export default function Hero() {
             className="mb-6 drop-shadow-sm"
             style={{ fontSize: 'clamp(2.8rem, 5.5vw, 5rem)', fontWeight: 900, lineHeight: 1.1, color: 'white' }}
           >
-            Two Buddhist Kingdoms. One Bridge for Business and Culture.
+            The Bridge Between Bhutan and Thailand
           </h1>
 
           <p className="text-white/90 max-w-xl mx-auto mb-10 leading-relaxed drop-shadow" style={{ fontSize: '1.125rem' }}>
-            Dinners, deals, and cultural exchange between Bangkok and Thimphu. An independent member community, now in formation.
+            Dinners, deals, and cultural exchange between two Buddhist kingdoms. A private member community connecting founders, investors, and artists across Bangkok and Thimphu.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="flex items-center justify-center">
             <a
               href="/join"
               className="inline-flex items-center px-8 py-4 rounded-full text-base font-semibold text-white bg-[#E1A101] shadow-lg transition-all duration-200 hover:brightness-110 hover:-translate-y-0.5"
             >
               Get Invited to Our Next Event
             </a>
-            <CalendlyLink className="inline-flex items-center px-8 py-4 rounded-full text-base font-semibold border border-white text-white transition-all duration-200 hover:bg-white/10 hover:-translate-y-0.5">
-              Book an Intro Call
-            </CalendlyLink>
           </div>
         </motion.div>
       </div>

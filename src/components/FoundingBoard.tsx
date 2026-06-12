@@ -27,7 +27,7 @@ export default function FoundingBoard() {
           </h2>
           <p className="text-gray-500 text-lg leading-relaxed">
             Governed by a founding board of five: three Bhutanese and two Thai business leaders.
-            Names announced upon incorporation.
+            Names announced when membership opens.
           </p>
         </motion.div>
       </div>

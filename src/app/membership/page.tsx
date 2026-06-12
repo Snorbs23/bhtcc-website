@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import InterestForm from "@/components/InterestForm";
+import CalendlyLink from "@/components/CalendlyLink";
 
 export const metadata: Metadata = {
-  title: "Membership | Bhutan-Thailand Chamber of Commerce",
+  title: "The Founding Circle | Bhutan-Thailand Chamber of Commerce",
   description:
-    "Membership in the Bhutan-Thailand Chamber of Commerce opens after incorporation. Register your interest in the founding circle.",
+    "Apply to the founding circle of the Bhutan-Thailand Chamber of Commerce: a first cohort of founders, operators, investors, and artists across Bangkok and Thimphu.",
 };
 
 export default function MembershipPage() {
@@ -15,12 +16,12 @@ export default function MembershipPage() {
       <Navbar />
       <main style={{ backgroundColor: "#EEDFC0" }}>
         {/* Page header */}
-        <div className="pt-32 text-center bg-white">
+        <div className="pt-16 text-center bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="inline-flex items-center gap-2 mb-4">
               <span className="w-6 h-px" style={{ backgroundColor: "#E1A101" }} />
               <span className="text-xs font-semibold uppercase tracking-widest" style={{ color: "#E1A101" }}>
-                First Cohort · Membership Opens After Incorporation
+                First Cohort · By Application
               </span>
               <span className="w-6 h-px" style={{ backgroundColor: "#E1A101" }} />
             </div>
@@ -28,12 +29,13 @@ export default function MembershipPage() {
               className="text-5xl lg:text-6xl font-extrabold leading-tight"
               style={{ color: "#4D7084" }}
             >
-              Apply to the Founding Circle
+              The Founding Circle
             </h1>
             <p className="mt-5 text-gray-500 text-lg max-w-2xl mx-auto">
-              Membership opens once our incorporation completes. There are no fees and nothing to
-              buy today. Until then, we are assembling a founding circle: a first cohort of founders,
-              operators, investors, and artists who will shape the community from day one.
+              We are assembling a first cohort of founders, operators, investors, and artists who
+              will shape this community from day one. Registering interest is free and comes with
+              no obligation. Founding members get first access to events, introductions, and the
+              member network when membership opens.
             </p>
           </div>
           <div className="h-14 mt-12 bg-gradient-to-b from-white to-[#EEDFC0]" />
@@ -61,9 +63,22 @@ export default function MembershipPage() {
             <InterestForm
               formId="founding-member-interest"
               showOrganization
-              submitLabel="Register Interest"
-              successMessage="Your interest is registered. We'll be in touch as the founding circle takes shape."
+              submitLabel="Request an Invitation"
+              successMessage="Your request is in. We'll be in touch as the founding circle takes shape."
             />
+          </div>
+
+          {/* Direct line for serious conversations */}
+          <div className="max-w-2xl mx-auto mt-8 text-center">
+            <CalendlyLink
+              className="font-semibold underline underline-offset-4"
+              style={{ color: "#4D7084" }}
+            >
+              Talk to the founding team
+            </CalendlyLink>
+            <p className="text-gray-500 text-xs mt-1.5">
+              30 minutes, for serious membership and partnership conversations.
+            </p>
           </div>
         </div>
       </main>

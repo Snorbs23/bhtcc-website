@@ -59,7 +59,7 @@ export default function About() {
               BHTCC is an independent, private member association currently in formation. We are not a government body.
             </p>
             <p className="text-sm font-semibold tracking-widest" style={{ color: "#E1A101" }}>
-              In formation · Bangkok &amp; Thimphu
+              Bangkok &amp; Thimphu · Two Buddhist Kingdoms
             </p>
           </motion.div>
 

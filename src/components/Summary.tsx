@@ -81,7 +81,7 @@ export default function Summary() {
             className="inline-flex items-center px-8 py-4 rounded-full text-base font-semibold border-2 transition-all duration-200 hover:bg-[#4D7084] hover:text-white"
             style={{ color: "#4D7084", borderColor: "#4D7084" }}
           >
-            Book an Intro Call
+            Talk to the Founding Team
           </CalendlyLink>
         </div>
       </div>

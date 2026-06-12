@@ -70,8 +70,8 @@ export default function Contact() {
             </a>
             <CalendlyLink className="flex justify-between items-center border-b border-gray-200 pb-4 group">
               <div>
-                <p className="text-[#E1A101] text-xs tracking-widest mb-1">PREFER TO TALK?</p>
-                <p className="text-[#4D7084] text-sm">Book a 30-minute intro call</p>
+                <p className="text-[#E1A101] text-xs tracking-widest mb-1">TALK TO THE FOUNDING TEAM</p>
+                <p className="text-[#4D7084] text-sm">30 minutes, for serious membership and partnership conversations.</p>
               </div>
               <span className="text-[#E1A101] group-hover:translate-x-1 transition-transform">→</span>
             </CalendlyLink>

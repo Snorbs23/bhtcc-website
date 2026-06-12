@@ -13,7 +13,7 @@ export default function ContactPage() {
   return (
     <>
       <Navbar />
-      <main style={{ backgroundColor: "#EEDFC0", paddingTop: "5rem" }}>
+      <main style={{ backgroundColor: "#EEDFC0" }}>
         <Contact />
       </main>
       <Footer />

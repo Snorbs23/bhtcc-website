@@ -13,7 +13,7 @@ export default function JoinPage() {
   return (
     <>
       <Navbar />
-      <main style={{ backgroundColor: "#EEDFC0", minHeight: "100vh" }} className="pt-28 pb-16 px-4 sm:px-6">
+      <main style={{ backgroundColor: "#EEDFC0", minHeight: "100vh" }} className="pt-12 pb-16 px-4 sm:px-6">
         <div
           className="max-w-2xl mx-auto rounded-3xl p-8 md:p-10"
           style={{
