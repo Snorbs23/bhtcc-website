@@ -74,7 +74,7 @@ export default function Hero() {
           </h1>
 
           <p className="text-white/90 max-w-xl mx-auto mb-10 leading-relaxed drop-shadow" style={{ fontSize: '1.125rem' }}>
-            Dinners, deals, and cultural exchange between two Buddhist kingdoms. A private member community connecting founders, investors, and artists across Bangkok and Thimphu.
+            A private member community connecting founders, investors, and artists across Bangkok and Thimphu, through dinners, deals, and cultural exchange between two Buddhist kingdoms.
           </p>
 
           <div className="flex items-center justify-center">
