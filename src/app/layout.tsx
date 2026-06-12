@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://bhutanthailandchamber.org"),
   title: "BHTCC | Bhutan-Thailand Chamber of Commerce",
   description:
-    "A Bhutan-Thailand business association in formation, connecting commerce and culture between two Buddhist kingdoms.",
+    "A private member community connecting founders, investors, and artists between Bhutan and Thailand. Dinners, deals, and cultural exchange between Bangkok and Thimphu. Now forming.",
   openGraph: {
     title: "Two Buddhist Kingdoms. One Bridge for Business and Culture.",
     description:
-      "A Bhutan-Thailand business association in formation, connecting commerce and culture between two Buddhist kingdoms.",
+      "A private member community connecting founders, investors, and artists between Bhutan and Thailand. Dinners, deals, and cultural exchange between Bangkok and Thimphu. Now forming.",
     url: "https://bhutanthailandchamber.org",
     siteName: "Bhutan-Thailand Chamber of Commerce",
     type: "website",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Two Buddhist Kingdoms. One Bridge for Business and Culture.",
     description:
-      "A Bhutan-Thailand business association in formation, connecting commerce and culture between two Buddhist kingdoms.",
+      "A private member community connecting founders, investors, and artists between Bhutan and Thailand. Dinners, deals, and cultural exchange between Bangkok and Thimphu. Now forming.",
     images: ["/og-image.jpg"],
   },
   icons: {
