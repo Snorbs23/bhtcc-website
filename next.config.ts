@@ -8,6 +8,12 @@ const nextConfig: NextConfig = {
         destination: "/",
         permanent: false,
       },
+      {
+        source: "/thaifex2027",
+        destination:
+          "https://docs.google.com/forms/d/1PTGBm-DtFFzSQkIovLl6C1B4J2Db5Xl-KObfyTkNI-A/viewform",
+        permanent: true,
+      },
     ];
   },
 };
